@@ -24,8 +24,7 @@
         app:layout_constraintCircle="@id/button_a"
         app:layout_constraintCircleAngle="45"
         app:layout_constraintCircleRadius="180dp"
-        app:layout_constraintStart_toStartOf="@+id/button_a"
-        app:layout_constraintTop_toTopOf="@+id/button_a"
-        />
+        app:layout_constraintStart_toEndOf="@+id/button_a"
+        app:layout_constraintTop_toTopOf="@+id/button_a" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
