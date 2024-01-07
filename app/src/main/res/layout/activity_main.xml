@@ -12,19 +12,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_b"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/button_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button B"
-        app:layout_constraintCircle="@id/button_a"
-        app:layout_constraintCircleAngle="45"
-        app:layout_constraintCircleRadius="180dp"
+        app:layout_constraintEnd_toStartOf="@id/button_c"
         app:layout_constraintStart_toEndOf="@+id/button_a"
         app:layout_constraintTop_toTopOf="@+id/button_a" />
+
+    <Button
+        android:id="@+id/button_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_b"
+        app:layout_constraintTop_toTopOf="@id/button_b" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
